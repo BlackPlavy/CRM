@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background-color: #343434;
+    color: white;
+}
+
+div.wrap {
+    margin: auto;
+    max-width: 1000px;
+}
+
+div.header {
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+}
+
+/* view all*/
+div.viewAll {
+    padding-bottom: 40px;
+}
+
+div.table {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+div.table table {
+    border: 2px solid white;
+    width: 100%;
+}
+
+div.table table thead {
+    font-size: 20px;
+}
+
+div.table table thead tr th {
+    padding: 20px;
+    border-bottom: white 1px solid;
+}
+
+tr th.notflex {
+    padding: 20px;
+
+}
+
+.aa {
+    color: white;
+}
+
+.aa:hover {
+    background-color: white;
+    color: #343434;
+}
+
+th.users {
+    height: 59px;
+    display: flex;
+    line-height: 59px;
+}
+
+th.users a {
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+    background-color: #343434;
+    border-radius: 10%;
+    transition: 0.3s;
+}
+
+th.users a:hover {
+    background-color: white;
+    color: #343434;
+
+}
+
+.btn {
+    background: none;
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 10%;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #343434;
+    cursor: pointer;
+}
+
+div.lastbtn {
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+div.lastbtn button {
+    padding: 6px;
+    border: white 2px solid;
+    background: none;
+    color: white;
+    transition: 0.3s;
+}
+
+div.lastbtn button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #343434;
+}
+
+/* add form */
+
+div.formAdd {
+    text-align: center;
+
+}
+
+div.formAdd div form label {
+    text-transform: uppercase;
+    padding: 5px;
+
+}
+
+div.formAdd div form label p p {
+    background-color: red;
+}
+
+/* added */
+
+div .added {
+    text-align: center;
+}
+
+div .added p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+div .addedflex {
+    display: flex;
+    flex-direction: column;
+}
+
+div .addedflex a {
+    background: none;
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 10%;
+    transition: 0.3s;
+    margin-bottom: 10px;
+}
+
+div .one {
+    width: 600px;
+    margin: auto;
+    color: white;
+}
+
+div .oneTable {
+    border: 2px solid white;
+    text-align: left;
+}
+
+div.oneTable tr {
+    border: 2px solid white;
+}
+
+div.oneTable tr th {
+    padding: 20px;
+}
+
+div .added form button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    margin: 10px;
+    text-decoration: underline;
+    font-weight: bold;
+}

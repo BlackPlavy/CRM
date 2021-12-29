@@ -1,0 +1,39 @@
+<div class="viewAll">
+    <h2>Lista klientów: </h2>
+</div>
+
+<div class="table">
+    <table>
+        <thead>
+        <tr class="first">
+            <th>E-mail</th>
+            <th>Imię</th>
+            <th>Data następnego kontaktu</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#each clients}}
+            <tr>
+                <th class="notflex"><a class="aa" href="mailto:{{this.email}}" target="_blank">{{this.email}}</a></th>
+                <th class="notflex">{{this.name}}</th>
+                <th class="notflex">{{this.nextContact}}</th>
+                <th class="users">
+                    <span><a href="/client/{{this.id}}">Szczegóły</a></span>
+                    <form method="post" action="/client/{{this.id}}?_method=delete">
+                        <button class ="btn" type="submit"
+                        >Usuń
+                        </button>
+                    </form>
+                </th>
+            </tr>
+        {{/each}}
+        </tbody>
+    </table>
+</div>
+
+<div class="lastbtn">
+    <form method="get" action="client/add/client">
+        <button type="submit">Dodaj nowego klienta</button>
+    </form>
+</div>

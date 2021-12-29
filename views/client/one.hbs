@@ -1,0 +1,43 @@
+<!--{{client.name}}-->
+<div class="one">
+    <div class="oneTable">
+        <table>
+
+
+            <tbody>
+            <tr>
+                <th>E-mail:</th>
+                <td><a class="aa" href="mailto:{{client.email}}" target="_blank">{{client.email}}</a></td>
+            </tr>
+            <tr>
+                <th>Imię:</th>
+                <td>{{client.name}}</td>
+            </tr>
+            <tr>
+                <th>Data następnego kontaktu:</th>
+                <td>{{client.nextContact}}</td>
+            </tr>
+            {{#if client.notes}}
+                <tr>
+                    <th>Notatki:</th>
+                    <td>{{client.notes}}</td>
+                </tr>
+            {{/if}}
+            </tbody>
+        </table>
+    </div>
+
+    <div class="added">
+        <form method="get" action="edit/{{client.id}}">
+            <button type="submit">Edytuj dane</button>
+        </form>
+        <div class="addedflex">
+            {{> back-to-clients}}
+        </div>
+    </div>
+
+
+
+
+
+</div>
